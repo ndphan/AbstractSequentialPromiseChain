@@ -1,0 +1,50 @@
+{
+  "name": "abstract-sequential-promise-chain",
+  "version": "1.0.0",
+  "description": "Wraps a function to become a sequential promise chain.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ndphan/AbstractSequentialPromiseChain.git"
+  },
+  "scripts": {
+    "build": "mkdirp dist && babel index.js --out-file dist/index.js",
+    "test": "nyc mocha --require @babel/register"
+  },
+  "keywords": [
+    "promise chain",
+    "async",
+    "function",
+    "chain",
+    "promise",
+    "wrapper"
+  ],
+  "author": "ndphan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ndphan/AbstractSequentialPromiseChain/issues"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/register": "^7.4.0",
+    "expect": "^1.20.2",
+    "mkdirp": "^0.5.1",
+    "mocha": "^6.1.4",
+    "nyc": "^14.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  },
+  "browserslist": [
+    "> 0.25%",
+    "not dead"
+  ]
+}

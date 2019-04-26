@@ -1,0 +1,5 @@
+src
+coverage
+test
+docs
+nyc_output
