@@ -1,8 +1,8 @@
 {
   "name": "abstract-sequential-promise-chain",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Wraps a function to become a sequential promise chain. It will keep track and chain promises together automatically on multiple invocations of the same function.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/ndphan/AbstractSequentialPromiseChain.git"
