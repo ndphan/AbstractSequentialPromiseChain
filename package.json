@@ -1,6 +1,6 @@
 {
   "name": "abstract-sequential-promise-chain",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Wraps a function to become a sequential promise chain. It will keep track and chain promises together automatically on multiple invocations of the same function.",
   "main": "dist/index.js",
   "repository": {
