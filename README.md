@@ -26,16 +26,16 @@ This is useful when you need to ensure async calls are in order but the function
 Simply call it on a function that returns a promise and use the result function in future calls to chain requests.
 
 ```javascript
-import AbstractSequentialPromiseChain from "./AbstractSequentialPromiseChain";
+import abstractSeqPromiseChain from "abstract-sequential-promise-chain";
 
-const chainedAsyncFunction = AbstractSequentialPromiseChain(asyncFunction);
+const chainedAsyncFunction = abstractSeqPromiseChain(asyncFunction);
 ```
 
 ## Example
 This shows that even though the timeout should have resulted in 5, 4, 3, 2, 1, however, as this was chained, the order was 1, 2, 3, 4, 5.
 
 ```javascript
-import AbstractSequentialPromiseChain from "./AbstractSequentialPromiseChain";
+import abstractSeqPromiseChain from "abstract-sequential-promise-chain";
 
 function asyncFunction(count) {
   return new Promise((resolve, reject) => {
@@ -47,7 +47,7 @@ function asyncFunction(count) {
   });
 }
 
-const chainedAsyncFunction = AbstractSequentialPromiseChain(asyncFunction);
+const chainedAsyncFunction = abstractSeqPromiseChain(asyncFunction);
 
 let startTime = new Date();
 for (let count = 1; count <= 5; count++) {
