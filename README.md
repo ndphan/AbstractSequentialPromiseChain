@@ -63,7 +63,8 @@ for (let count = 1; count <= 5; count++) {
 // 5: took 205 mills
 ```
 
-This shows that even though the timeout should have resulted in 5, 4, 3, 2, 1. However, as this was chained, the order was 1, 2, 3, 4, 5.
+This shows that even though the timeout should have resulted in 5, 4, 3, 2, 1. 
+However, as this was chained, the order was 1, 2, 3, 4, 5.
 
 ## Api
 function AbstractSequentialPromiseChain(promiseFunction)
